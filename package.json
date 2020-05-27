@@ -1,16 +1,22 @@
 {
-  "name": "ngork-qr",
-  "version": "1.0.0",
-  "description": "",
-  "main": "run.js",
+  "name": "ngrok-qr-tunnel",
+  "version": "1.0.7",
+  "description": "A simple developmet script for running NGROK and nodemon together and generating a QR to access the NGROK tunnel.",
+  "main": "./lib/tunnelQR.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "tunnel": "./bin/index.js"
+  },
+  "preferGlobal": true,
   "author": "Conor Deegan",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",
+    "colors": "^1.4.0",
     "ngrok": "^3.2.7",
+    "nodemon": "^2.0.4",
     "qrcode-terminal": "^0.12.0"
   }
 }
